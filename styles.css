@@ -1,0 +1,43 @@
+body{
+	background-color: rgb(41, 5, 101);
+}
+
+h1{
+	font-family: Georgia;
+	height:3%;
+	color:white;
+	text-align: center;
+	width: 50%;
+	margin-left:25%;
+}
+
+nav ul{
+	position: absolute;
+	list-style-type: none;
+	margin-left: 25%;
+	margin-top: 10%;
+	width: 50%;
+  	padding: 0;
+}
+
+.button-list:{
+	position: relative;
+	margin-left:15%;
+	width: 70%;
+	margin-top: 40%
+}
+.button-list a{
+	text-align: center;
+	background-color: rgba(255, 255, 255, .60);
+	text-decoration: none;
+}
+
+
+
+#tarot-image{
+	position:absolute;
+	margin-left: 10%;
+	width:80%;
+	height: 50vh;
+	padding-top:10%;
+}
