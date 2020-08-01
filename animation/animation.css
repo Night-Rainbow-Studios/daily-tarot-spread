@@ -1,0 +1,25 @@
+body{
+	background-color: rgb(41, 5, 101);
+}
+
+#Images{
+	width:100%;
+	background-color:white;
+
+}
+
+.cards{
+	position:relative;
+	border-radius:60%;
+	display:inline-block;
+	margin-left:25%;
+}
+
+
+#redirect{
+	margin-top:40%;
+	width:60%;
+	margin-left:20%;
+	background-color: white;
+	text-align: center;
+}
