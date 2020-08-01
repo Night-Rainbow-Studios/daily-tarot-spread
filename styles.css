@@ -26,6 +26,11 @@ nav ul{
 	width: 70%;
 	margin-top: 40%
 }
+
+.menu li{
+	display: inline-block;
+}
+
 .button-list a{
 	text-align: center;
 	text-decoration: none;
