@@ -1,0 +1,9 @@
+#-*- Como mover las cartas
+
+	-Usando position:relative; en css y despues transform:translate(X, Y);
+
+	-Usar JS para my_element.style.transform = "translate("+ x +", "+ y +")"
+
+	-Para que la animacion sea mas suave usa transition-duration: 300ms; en CSS.
+
+
