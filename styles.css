@@ -28,10 +28,27 @@ nav ul{
 }
 .button-list a{
 	text-align: center;
-	background-color: rgba(255, 255, 255, .60);
 	text-decoration: none;
 }
 
+.btn{
+	position: relative;
+	background-color: white;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	padding: 10px 24px;
+	border: solid black;
+}
+
+.btn:hover{
+    box-shadow: black 2px 2px 2px 2px;
+	transform: scale(1.1);
+}
 
 
 #tarot-image{
