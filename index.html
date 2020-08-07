@@ -2,25 +2,39 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name= "author" content="Night Rainbow Studios"/>
 	<title>Daily Tarot spread</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<header>
-		<h1>Daily Tarot Spread</h1>
+		<h1>¿Que dicen las cartas sobre ti?</h1>
 		
 	</header>
-	<img id="tarot-image", src="background.jpeg"></img>
-	<nav>
-		<div class="menu">
-			<ul>
-				<li class="button-list"><button class="btn"><a href="" >Tarot del día</a></button></li>
-				<li class="button-list"><button class="btn"><a href="">Tarot de la tarde</a></button></li>
-				<li class="button-list"><button class="btn"><a href="">Tarot del amor</a></button></li>
-				<li class="button-list"><button class="btn"><a href="">Tarot de la suerte</a></button></li>
-				<li class="button-list"><button class="btn"><a href="">Tarot del futuro</a></button></li>
-			</ul>
-		</div>
-		</nav>
+				<a href=#>Diario</a>
+				<a href=#>Para esta tarde</a>
+				<a href=#>En el amor</a>
+				<a href=#>Para tu suerte</a>
+				<a href=#>Planes a futuro</a>
+<script type="text/javascript">
+	const buttons = document.querySelectorAll('a');
+	buttons.forEach(btn => {
+		btn.addEventListener('click', function(e) {
+			
+			let x = e.clientX = e.target.offsetLeft;
+			let y = e.clientY = e.target.offsetTop;
+			
+			let ripples = document.createElement('span');
+			ripples.style.left = x = 'px';
+			ripples.style.top = y = 'px';
+			this.appendChild(ripples);
+
+			setTimeout(() =>{
+				ripples.remove()
+			},1000);
+		})
+	})
+</script>
 </body>
 </html>
