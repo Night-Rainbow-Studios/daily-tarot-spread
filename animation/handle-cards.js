@@ -1,4 +1,4 @@
-paths =new Array(
+paths =new Array( //direcciones de las imagenes de las cartas.
         '..\\assets\\big\\Back-b.jpg',
         '..\\assets\\big\\Cups01-b.jpg',
         '..\\assets\\big\\Cups02-b.jpg',
@@ -78,24 +78,26 @@ paths =new Array(
         '..\\assets\\big\\Wand12-b.jpg',
         '..\\assets\\big\\Wand13-b.jpg',
         '..\\assets\\big\\Wand14-b.jpg');
-const select_cards = document.getElementsByClassName("select-container");
-const your_cards = document.getElementsByClassName("card");
-const back = document.getElementsByClassName("back-img");
+
+const select_cards = document.getElementsByClassName("select-container");//cartas de arriba
+const your_cards = document.getElementsByClassName("card");//cartas de abajo (ocultas)
+const back = document.getElementsByClassName("back-img");//La imagen de la parte de atras (vacio hasta que se da click)
 var total_cards = paths.length;
-var counter = 0;
+var counter = 0; //contador de clicks que le has dado a las cartas de arriba.
 var card = 0;
 
-var disapear = function(){
-	if(counter < 3){
-		this.style.opacity = 0;
-		your_cards[counter].style.opacity = 1;
-		your_cards[counter].style.transition = "transform 0.8s";
+var disapear = function(){ //Funcion para aparecer y desaparecer las cartas cuando das click.
+	if(counter < 3){ //evitar que desaparezcan mas de 3 cartas.
+		this.style.opacity = 0; //desaparecer carta de arriba.
+		your_cards[counter].style.opacity = 1; //aparecer carta de abajo.
+		//girar 
+		your_cards[counter].style.transition = "transform 0.8s"; 
 		your_cards[counter].style.transformStyle = "preserve-3d";
 		your_cards[counter].style.transform = "rotateY(180deg)";
 
-		var selected = Math.floor(Math.random() * total_cards);
-		back[counter].src = paths[selected];
-		delete paths[counter] 
+		var selected = Math.floor(Math.random() * total_cards); //Numero aleatorio entre 0 y el total de imagenes de cartas.
+		back[counter].src = paths[selected]; //poner imagen en la parte de atras de la carta.
+		path.splice(selected, 1); //Quitar esa imagen de la lista para que no se repitan cartas.
 		counter += 1;
 	}
 }
