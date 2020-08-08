@@ -82,6 +82,8 @@ h1{
   color: #fff;
 }
 .back {
+  border:3px solid rgb(113,145,210);
+  border-radius: 3px;
   background-color: #517fa4;
   color: #fff;
   transform: rotateY(180deg);
