@@ -2,16 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name= "author" content="Night Rainbow Studios"/>
 	<title>Card flip</title>
 	<link rel="stylesheet" type="text/css" href="flip.css">
 </head>
 <body>
+	<header>
+		<h1>Escoja 3 cartas</h1>
+	</header>
 	<div class="card-board">
 		<div class="select-container">
 			<img src="..\assets\card1.png"></img>
 			<div class="select-card"></div>
 		</div>
-		<div class="select-container">
+		<div class="select-container" >
 			<img src="..\assets\card1.png"></img>
 			<div class="select-card"></div>
 		</div>
@@ -19,7 +24,7 @@
 			<img src="..\assets\card1.png"></img>
 			<div class="select-card"></div>
 		</div>
-		<div class="select-container" id="mytest">
+		<div class="select-container">
 			<img src="..\assets\card1.png"></img>
 			<div class="select-card"></div>
 		</div>
@@ -36,6 +41,38 @@
 			<div class="select-card"></div>
 		</div>
 	</div>
-	<script type="text/javascript" src="test.js"></script>
+	<div id="your-cards">
+		<div class="flip-card-container">
+			<div class="card">
+				<div class="front">
+					<img src="..\assets\card1.png"/>
+				</div>
+				<div class="back">
+					<img src="" class="back-img">
+				</div>
+			</div>
+		</div>
+		<div class="flip-card-container">
+			<div class="card">
+				<div class="front">
+					<img src="..\assets\card1.png"/>
+				</div>
+				<div class="back">
+					<img src="" class="back-img">
+				</div>
+			</div>
+		</div>
+		<div class="flip-card-container">
+			<div class="card">
+				<div class="front">
+					<img src="..\assets\card1.png"/>
+				</div>
+				<div class="back">
+					<img src="" class="back-img">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="handle-cards.js"></script>
 </body>
 </html>

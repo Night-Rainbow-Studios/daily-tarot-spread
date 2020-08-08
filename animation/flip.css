@@ -1,5 +1,15 @@
 body{
-	background-color: rgb(41, 5, 101);
+  background-color: rgb(41, 5, 101);
+}
+header{
+  width:100%;
+}
+h1{
+  font-family: Georgia;
+  height:3%;
+  color:white;
+  text-align: center;
+  width: 100%;
 }
 
 .select-container{
@@ -23,7 +33,7 @@ body{
 }
 
 .select-card:hover{
-    background-color: rgba(253,184, 184, 0.4);
+  background-color: rgba(253,184, 184, 0.4);
 }
 
 #mytest .select-card:hover{
@@ -32,51 +42,52 @@ body{
 
 
 .card-board{
-	margin-top: 3%;
-	width:100%;
-	text-align: center;
+  margin-top: 3%;
+  width:100%;
+  text-align: center;
 }
 
 
 .flip-card-container {
-	margin-left:1%;
-	width: 144px;
-	height: 205px;
-	display: inline-block;
+  margin-top:5%;
+  margin-left:19%;
+  width: 114px;
+  height: 205px;
+  display: inline-block;
 }
 .card {
-  	position: relative;
-  	width: 100%;
-  	height: 100%;
-  	transition: transform 1s;
-  	transform-style: preserve-3d;
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
-.flip-card-container:hover .card {
-  	transform: rotateY(180deg); 
-}
+
 .front, .back {
-  	font-size:3rem;
-  	position: absolute;
-  	width: 100%;
-  	height: 100%;
-  	-webkit-backface-visibility: hidden; /* Safari */
-  	backface-visibility: hidden;
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
+  font-size:3rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .front {
-  	background-color: #333;
-  	color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 .back {
-  	background-color: #517fa4;
-  	color: #fff;
-  	transform: rotateY(180deg);
+  background-color: #517fa4;
+  color: #fff;
+  transform: rotateY(180deg);
 }
 
 .front img, .back img{
-	width:100%;
-	height: 100%;
+  width:100%;
+  height: 100%;
 }
