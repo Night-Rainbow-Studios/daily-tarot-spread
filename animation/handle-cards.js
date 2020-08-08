@@ -1,4 +1,4 @@
-paths =new Array( //direcciones de las imagenes de las cartas.
+paths =[//direcciones de las imagenes de las cartas.
         '..\\assets\\big\\Back-b.jpg',
         '..\\assets\\big\\Cups01-b.jpg',
         '..\\assets\\big\\Cups02-b.jpg',
@@ -77,7 +77,7 @@ paths =new Array( //direcciones de las imagenes de las cartas.
         '..\\assets\\big\\Wand11-b.jpg',
         '..\\assets\\big\\Wand12-b.jpg',
         '..\\assets\\big\\Wand13-b.jpg',
-        '..\\assets\\big\\Wand14-b.jpg');
+        '..\\assets\\big\\Wand14-b.jpg'];
 
 const select_cards = document.getElementsByClassName("select-container");//cartas de arriba
 const your_cards = document.getElementsByClassName("card");//cartas de abajo (ocultas)
@@ -97,11 +97,14 @@ var disapear = function(){ //Funcion para aparecer y desaparecer las cartas cuan
 
 		var selected = Math.floor(Math.random() * total_cards); //Numero aleatorio entre 0 y el total de imagenes de cartas.
 		back[counter].src = paths[selected]; //poner imagen en la parte de atras de la carta.
-		path.splice(selected, 1); //Quitar esa imagen de la lista para que no se repitan cartas.
+		//console.log(paths[selected])
+		paths.splice(selected, 1)//Quitar esa imagen de la lista para que no se repitan cartas.
+		//console.log(paths[selected])
 		counter += 1;
+		console.log(counter);
 	}
 }
 
 for(card; card < select_cards.length; card++){
-	select_cards[card].addEventListener("click", disapear, false);
+	select_cards[card].addEventListener("click", disapear, false); //
 }
