@@ -1,5 +1,4 @@
 paths =[//direcciones de las imagenes de las cartas.
-        '..\\assets\\big\\Back-b.jpg',
         '..\\assets\\big\\Cups01-b.jpg',
         '..\\assets\\big\\Cups02-b.jpg',
         '..\\assets\\big\\Cups03-b.jpg',
@@ -96,9 +95,12 @@ var disapear = function(){ //Funcion para aparecer y desaparecer las cartas cuan
 		your_cards[counter].style.transform = "rotateY(180deg)";
 
 		var selected = Math.floor(Math.random() * total_cards); //Numero aleatorio entre 0 y el total de imagenes de cartas.
-		back[counter].src = paths[selected]; //poner imagen en la parte de atras de la carta.
-		//console.log(paths[selected])
+		
+                back[counter].src = paths[selected]; //poner imagen en la parte de atras de la carta.
+		
+                //console.log(paths[selected])
 		paths.splice(selected, 1)//Quitar esa imagen de la lista para que no se repitan cartas.
+                total_cards -= 1;
 		//console.log(paths[selected])
 		counter += 1;
 		console.log(counter);
