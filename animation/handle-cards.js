@@ -84,6 +84,12 @@ const back = document.getElementsByClassName("back-img");//La imagen de la parte
 var total_cards = paths.length;
 var counter = 0; //contador de clicks que le has dado a las cartas de arriba.
 var card = 0;
+var prediction = document.getElementById("pred"); 
+var close = document.getElementById("close");
+close.addEventListener("click", function(){
+        prediction.style.opacity = 0;
+        prediction.style.zIndex = 0;
+});
 
 var disapear = function(){ //Funcion para aparecer y desaparecer las cartas cuando das click.
 	if(counter < 3){ //evitar que desaparezcan mas de 3 cartas.
@@ -105,6 +111,12 @@ var disapear = function(){ //Funcion para aparecer y desaparecer las cartas cuan
 		counter += 1;
 		console.log(counter);
 	}
+        if(counter == 3){
+                counter += 1;
+                pred.style.zIndex = 1;
+                pred.style.opacity = 1;
+                pred.classList.add("fast-close");
+        }
 }
 
 for(card; card < select_cards.length; card++){
