@@ -1,3 +1,4 @@
+//Lista de predicciones.
 let predictions = ["Hoy romperás con la rutina. Te sientes como si estuvieras en un gran corcel, siempre en búsqueda de aventuras y a la conquista de nuevas tierras. Pero tienes que darle un respiro a tu caballo para que beba. Además, a ti también te caería bien un descansito. Aprovecha este momento de sosiego para elaborar mentalmente un plan de ataque",
         "Hoy quizás quieras asumir un nuevo rol. Siempre has tenido la habilidad de ser un poco camaleón. Eres un actor por naturaleza, capaz de presentarte a ti mismo de muchas formas distintas. Pero hoy sentirás la necesidad de hacer un cambio en el área personal. Quizás desees explorar nuevos terrenos en tu vida romántica. ¡Comienza a comportarte en forma distinta con tu pareja, y atrévete al cambio!",
         "Tu sentido de la aventura será muy fuerte hoy. Sentirás la necesidad de escapar de la monotonía y el trajín de tu ámbito de trabajo. Tal vez sueñes con viajar a lugares exóticos que nunca has visitado o, aunque más no sea, desearás leer sobre ellos. Éste es un buen momento para organizar un viaje así. Si realmente sueñas con una escapada, ¡no esperes más!",
@@ -27,6 +28,8 @@ let predictions = ["Hoy romperás con la rutina. Te sientes como si estuvieras e
         "¿Tienes planes para ir a una fiesta esta noche? No los canceles. Cabe la posibilidad que conozcas a alguien interesante con el que discutirás tranquilamente de temas amorosos o profesionales. Al menos que el cansancio no te permita moverte, ¡levántate y asiste! ¡No te arrepentirás!",
         "Estarás preocupado en mejorar tu imagen. Quizás estés pensando en cambiar tu guardarropas. Querrás invertir en un nuevo traje que realmente te complementará. O tal vez comprarte nuevas corbatas coloridas que acentuarán tu imagen. Hasta un nuevo par de zapatos te hará sentir de maravillas. ¡Aprovecha las próximas rebajas para cambiar tu imagen desde la cabeza hasta los pies!",
         "Hoy dirigirás tu atención a descubrir nuevas maneras de progresar económicamente. Estarás más conciente que nunca de tu poder interno. Te puede ayudar leer sobre las distintas posibilidades, especialmente hoy que te sientes particularmente capaz y por consiguiente seguramente encontrarás el mejor método para ti. Quizás te convenga recluirte en soledad para poder concentrarte."];
-let selected_prediction = predictions[Math.floor(Math.random() * predictions.length)];
-let myprediction = document.getElementById("text")
-myprediction.innerHTML = selected_prediction;
+
+
+let selected_prediction = predictions[Math.floor(Math.random() * predictions.length)]; //Tomar una prediccion aleatoria.
+let myprediction = document.getElementById("text") 
+myprediction.innerHTML = selected_prediction; //Poner la prediccion en el <p>;
