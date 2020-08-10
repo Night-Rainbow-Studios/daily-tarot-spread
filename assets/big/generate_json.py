@@ -28,6 +28,7 @@ def main():
 	formats = o.format.split(",")
 	print(formats)
 	for file in files:
+		file = "..\\assets\\big" + file 
 		frmt = file.split(".")[-1].lower()
 		if frmt in formats:
 			print("[+]{}".format(file))
