@@ -85,11 +85,13 @@ var total_cards = paths.length;
 var counter = 0; //contador de clicks que le has dado a las cartas de arriba.
 var card = 0;
 var prediction = document.getElementById("pred"); 
-var close = document.getElementById("close");
+/*var close = document.getElementById("close");
 close.addEventListener("click", function(){
         prediction.style.opacity = 0;
         prediction.style.zIndex = 0;
-});
+        prediction.classList.add("fast-close");
+});*/
+select_cards[0].scrollIntoView();
 
 var disapear = function(){ //Funcion para aparecer y desaparecer las cartas cuando das click.
 	if(counter < 3){ //evitar que desaparezcan mas de 3 cartas.
@@ -113,9 +115,9 @@ var disapear = function(){ //Funcion para aparecer y desaparecer las cartas cuan
 	}
         if(counter == 3){
                 counter += 1;
-                pred.style.zIndex = 1;
-                pred.style.opacity = 1;
-                pred.classList.add("fast-close");
+                prediction.style.display = "block";
+                prediction.style.opacity = 1;   
+                prediction.scrollIntoView({block:'end', behavior:'smooth'});  
         }
 }
 
