@@ -18,9 +18,9 @@ article{
   justify-content: center;
   position: relative;
   /*background: linear-gradient(90deg,rgb(41, 5, 101),#CE38CA);*/
-  margin-top:40%;
+  margin-top:10%;
   width:100%;
-  height: 70vh;
+  height: 60vh;
   z-index: 0;
   overflow: auto;
   transition: opacity 2.5s ease-in-out;
