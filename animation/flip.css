@@ -6,16 +6,21 @@ header{
 }
 
 article{
+  border: 5px outset #CE38CA;
+  border-radius: 22px;
   opacity: 0;
-  border-radius:5%;
+  color: white;
+  text-align: center;
+  justify-content: center;
   margin-top: 2%;
   position: absolute;
-  background-color: #661aff;
+  background: linear-gradient(0deg,#000,#262626);
   width:80%;
   margin-left:5%;
   margin-right: 5%;
   height: 80vh;
   z-index: 0;
+  overflow: auto;
   transition: opacity 2.5s ease-in-out;
   -moz-transition: opacity 2.5s ease-in-out;
   -webkit-transition: opacity 2.5s ease-in-out;
@@ -45,6 +50,7 @@ article{
 }
 
 #close{
+  font-size: 13px;
   border-radius: 40%;
   background: white;
   border:0px;

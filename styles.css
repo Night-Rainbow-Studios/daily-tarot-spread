@@ -1,3 +1,6 @@
+*{
+	font-family: sans-serif;
+}
 body{
 	background-color: rgb(41, 5, 101);
 	background: url("./background.jpeg");
@@ -13,11 +16,48 @@ body{
 }
 
 h1{
-	font-family: Georgia;
-	height:3%;
-	color:white;
 	text-align: center;
-	width: 100%;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	position: relative;
+	animation: text 3s 1;
+}
+h2{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	animation: text2 3s 1;
+}
+
+@keyframes text{
+	0%{
+		color: rgb(41, 5, 101);
+		margin-bottom: -60px;
+	}
+	30%{
+		letter-spacing: 10px;
+		margin-bottom: -60px;
+	}
+	85%{
+		letter-spacing: 5px;
+		margin-bottom: -60px;
+	}
+}
+@keyframes text2{
+	0%{
+		visibility: hidden;
+	}
+	30%{
+		visibility: hidden;
+	}
+	85%{
+		visibility: hidden;
+	}
+	99%{
+		visibility: visible;
+	}
 }
 a{
 	position: relative;
