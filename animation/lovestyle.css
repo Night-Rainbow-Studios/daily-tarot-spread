@@ -65,6 +65,7 @@ h2{
 	font-size:3vh;
 }
 
+
 .love {
 	opacity: 0;
 	transition: opacity 0.2s ease-in-out;
