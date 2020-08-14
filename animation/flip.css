@@ -17,6 +17,12 @@ article{
   -moz-transition: opacity 2.5s ease-in-out;
   -webkit-transition: opacity 2.5s ease-in-out;
 }
+
+body{
+  background: linear-gradient(90deg,#FF5589,#FCB0C7);
+}
+
+
 #text::-webkit-scrollbar {
   width: 10px;
 }
