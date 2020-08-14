@@ -7,6 +7,15 @@
 	<title>Tarot para hoy</title>
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 	<link rel="stylesheet" type="text/css" href="flip.css">
+	<style type="text/css">
+		body{
+ 		 background: linear-gradient(90deg,#FF5589,#FCB0C7);
+		}
+		.front, .back{
+			border:3px solid #794200;
+			background-color: #794200;
+		}
+	</style>
 </head>
 <body id="lovetarot">
 	<header>
@@ -66,30 +75,30 @@
 	<div id="your-cards" style="margin-top:5%; width:80%; margin-left:10%;text-align: center;">
 		<div class="flip-card-container">
 			<div class="card">
-				<div class="front">
+				<div class="front lovef">
 					<img src="..\assets\lovecard.png"/>
 				</div>
-				<div class="back">
+				<div class="back loveb">
 					<img src="" class="back-img">
 				</div>
 			</div>
 		</div>
 		<div class="flip-card-container">
 			<div class="card">
-				<div class="front">
+				<div class="front lovef">
 					<img src="..\assets\lovecard.png"/>
 				</div>
-				<div class="back">
+				<div class="back loveb">
 					<img src="" class="back-img">
 				</div>
 			</div>
 		</div>
 		<div class="flip-card-container">
 			<div class="card">
-				<div class="front">
+				<div class="front lovef">
 					<img src="..\assets\lovecard.png"/>
 				</div>
-				<div class="back">
+				<div class="back loveb">
 					<img src="" class="back-img">
 				</div>
 			</div>
@@ -103,7 +112,7 @@
 			<p id="text"></p>
 			<p>¿Quieres saber más?</p>
 			<br>
-			<a href="#">¡Click aquí!</a>
+			<a href="#" id="lovelink">¡Click aquí!</a>
 		</div>
 	</article>
 	<script type="text/javascript" src="predictions.js"></script>
