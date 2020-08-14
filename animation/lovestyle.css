@@ -65,8 +65,14 @@ h2{
 	font-size:3vh;
 }
 
+#percentage{
+	margin-top:35%;
+	width:100%;
+}
 
 .love {
+	margin-left:auto;
+	margin-right: auto;
 	opacity: 0;
 	transition: opacity 0.2s ease-in-out;
   	-moz-transition: opacity 0.2s ease-in-out;
@@ -76,30 +82,31 @@ h2{
   	height: 50px;
   	transform: rotate(45deg);
   	background: linear-gradient(90deg,#C1003B,#FF5589);
-  	position: relative;
   	top: 10rem;
   	left: 10rem;
   	animation: beating 2s ease infinite;
 }
 
 .love:before, .love:after {
+	z-index: 0;
   	content: "";
   	height: 50px;
   	width: 50px;
   	border-radius: 50%;
   	background: red;
   	position: absolute;
-  	background: linear-gradient(45deg,#C1003B,#FF5589);
 }
 
 .love:before {
   	top: 0;
   	left: -25px;
+  	background: linear-gradient(45deg,#C1003B,#FF5589);
 }
 
 .love:after {
   	left:0px;
   	top: -25px;
+  	background: linear-gradient(45deg,#FF5589,#C1003B);
 }
 
 @keyframes beating {
