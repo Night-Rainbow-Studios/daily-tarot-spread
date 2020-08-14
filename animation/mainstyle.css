@@ -1,0 +1,18 @@
+*{
+  	font-family: sans-serif;
+}
+body{
+  	background: linear-gradient(90deg,rgb(41, 5, 101),#CE38CA);
+}
+header{
+  	width:100%;
+}
+
+h1{
+  	font-family: Georgia;
+  	height:3%;
+  	font-size:4vh;
+  	color:white;
+  	text-align: center;
+  	width: 100%;
+}

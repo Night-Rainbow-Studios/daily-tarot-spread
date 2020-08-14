@@ -2,7 +2,7 @@
 	font-family: sans-serif;
 }
 body{
-	background-color: rgb(41, 5, 101);
+	background: rgb(41, 5, 101);
 	background: url("./background.jpeg");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -89,6 +89,7 @@ a{
 a:nth-child(2){
 	background: linear-gradient(90deg,#755bea,#ff72c0);
 }
+
 
 span{
 	position: absolute;
