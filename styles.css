@@ -59,7 +59,7 @@ h2{
 		visibility: visible;
 	}
 }
-a{
+.link{
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -86,7 +86,7 @@ a{
 
 }
 
-a:nth-child(2){
+.link:nth-child(2){
 	background: linear-gradient(90deg,#755bea,#ff72c0);
 }
 
