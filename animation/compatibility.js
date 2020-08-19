@@ -4,6 +4,7 @@ var heart = document.getElementById("heart");
 var body = document.getElementById("amor");
 var calculate = document.getElementById("calculate");
 var selected = document.getElementsByClassName("select-sign");
+var redirect = document.getElementById("rdrct");
 
 var already_calculated = false;
 var sign1 = selected[0].value;
@@ -36,6 +37,7 @@ calculate.addEventListener("click", function(){
 				signs[hash2] = percentage.innerHTML;
 			}
 			heart.style.opacity = 1; //aparecer corazon.
+			redirect.style.opacity = 1;
 			already_calculated = true;
 		
 		}
