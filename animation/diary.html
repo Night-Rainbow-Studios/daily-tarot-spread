@@ -7,6 +7,7 @@
 	<title>Tarot para hoy</title>
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 	<link rel="stylesheet" type="text/css" href="flip.css">
+	<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </head>
 <body id="diario">
 	<header>
@@ -100,14 +101,19 @@
 			<h2>Lo que las cartas dicen de ti: </h2>
 		</div>
 		<div id="prediction">
+			<div id="sharecont">
+				<div id="share"><img src="fb.png" class="shr" id="shrimg"><button id="shrbt" class="shr">Share</button></input>
+			</div>
 			<p id="text"></p>
 			<p>¿Quieres saber más?</p>
 			<br>
 			<a class="link" href="#">¡Click aquí!</a>
+			
 		</div>
 	</article>
 	<script type="text/javascript" src="predictions.js"></script>
 	<script type="text/javascript" src="handle-cards.js"></script>
+	<script type="text/javascript" src="share.js"></script>
 </body>
 </html>
 </html>
