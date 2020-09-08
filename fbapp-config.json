@@ -1,15 +1,7 @@
 {
-
   "instant_games": {
     "platform_version": "RICH_GAMEPLAY",
-    "orientation": "PORTRAIT",
+    "orientation": "LANDSCAPE",
     "navigation_menu_version": "NAV_FLOATING"
-  },
-
-   "orientation": "PORTRAIT",
-   "override_web_orientation": "LANDSCAPE",
-   "navigation_menu_version": "NAV_FLOATING",
-    "match_player_config": {
-    "min_context_size": 2,
-    "max_context_size": 20
+  }
 }
