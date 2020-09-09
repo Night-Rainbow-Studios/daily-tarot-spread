@@ -18,6 +18,5 @@ FBInstant.initializeAsync()
           document.getElementById("name").innerHTML = playerName;
           game.start();
         }
-      }, 100)
+      }, 100);
       // Start loading game assets here
-    );
