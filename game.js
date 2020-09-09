@@ -19,4 +19,4 @@ FBInstant.initializeAsync()
           game.start();
         }
       }, 100);
-      // Start loading game assets here
+    });
