@@ -9,6 +9,25 @@
 	<link rel="stylesheet" type="text/css" href="lovestyle.css">
 </head>
 <body id="amor">
+	<script>
+ 	 window.fbAsyncInit = function() {
+   	 FB.init({
+    	  appId      : '611973886182543',
+    	  xfbml      : true,
+    	  version    : 'v8.0'
+  	  });
+  	  FB.AppEvents.logPageView();
+ 	 };
+
+	  (function(d, s, id){
+    	 var js, fjs = d.getElementsByTagName(s)[0];
+    	 if (d.getElementById(id)) {return;}
+    	 js = d.createElement(s); js.id = id;
+    	 js.src = "https://connect.facebook.net/en_US/sdk.js";
+    	 fjs.parentNode.insertBefore(js, fjs);
+   	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	
 	<header>
 		<h1>Ingresa tu signo y el de tu persona amada</h1>
 	</header>
