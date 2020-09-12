@@ -18,14 +18,11 @@ h1{
 }
 
 #your-cards{
-	border:4px solid #efb810;
-	border-radius: 20px;
 	margin-top:6%; 
 	width:80%;
 	margin-left:10%;
 	text-align: center;
 	height: 140px;
-	background-color: rgb(41, 5, 101);
 }
 @media screen and (min-width: 600px){
 	#your-cards{
