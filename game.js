@@ -20,9 +20,3 @@ FBInstant.initializeAsync()
         }
       }, 100);
     });
-  function Notifications(){
-    POST /{recipient_userid}/notifications?
-     access_token=0d5775f4a677780af71d348694d85f02
-     href=index.html 
-     template=¡Averigua tu suerte hoy!
-  }
