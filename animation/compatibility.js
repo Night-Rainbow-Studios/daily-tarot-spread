@@ -32,7 +32,7 @@ calculate.addEventListener("click", function(){
 				percentage.innerHTML = "10000%"; //Mi novia y yo.
 			}
 			else{
-				percentage.innerHTML = "" + Math.floor(Math.random() * 100) + "%"; //Si nunca se habia calculado esta pareja: atribuir valor.
+				percentage.innerHTML = "" + (Math.floor(Math.random() * 100) + Math.floor(Math.random() * 40)) + "%"; //Si nunca se habia calculado esta pareja: atribuir valor.
 				signs[hash1] = percentage.innerHTML; //guardar valor.
 				signs[hash2] = percentage.innerHTML;
 			}
