@@ -1,18 +1,4 @@
 <!DOCTYPE html>
-<?php include 'fbsdk/facebook.php';
-
-define('FB_APP_ID', '611973886182543');
-define('FB_APP_SECRET', '16987e6a8dbeb2b5ea2263e15c8755ee');
-
-// initiate Facebook 
-$facebook = new Facebook(array('appId' => FB_APP_ID, 'secret' => FB_APP_SECRET, 'cookie' => true, 'domain' => 'DAILY_TAROT'));
-
-// send notification
-$fb_response = $facebook->api('/FACEBOOK-USER-UNIQUE-ID/notifications', 'POST', array('access_token' => FB_APP_ID . '|' . FB_APP_SECRET, 'href' => 'index', 'template' => 'Averigua tu futuro para hoy!'));
-if ($fb_response['success'] == false) { // in case of an error do something here }    
-unset($facebook);
-?>
-
 <html>
 <head>
 	<meta charset="utf-8">
