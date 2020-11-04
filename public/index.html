@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta charset="utf-8">
 	<meta property="og:url"           content="https://www.tarotgratis.best" />
 	<meta property="og:type"          content="website" />
 	<meta property="og:title"         content="Daily Tarot spread" />
@@ -17,25 +16,30 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-		<script>
- 	 window.fbAsyncInit = function() {
-   	 FB.init({
-    	  appId      : '611973886182543',
-    	  xfbml      : true,
-    	  version    : 'v8.0'
-  	  });
-  	  FB.AppEvents.logPageView();
- 	 };
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 
-	  (function(d, s, id){
-    	 var js, fjs = d.getElementsByTagName(s)[0];
-    	 if (d.getElementById(id)) {return;}
-    	 js = d.createElement(s); js.id = id;
-    	 js.src = "https://connect.facebook.net/en_US/sdk.js";
-    	 fjs.parentNode.insertBefore(js, fjs);
-   	}(document, 'script', 'facebook-jssdk'));
-	</script>
-	
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAn52cDIbNtGWfyNTOLOgxBj9Q81iuDot8",
+    authDomain: "tarot-797ea.firebaseapp.com",
+    databaseURL: "https://tarot-797ea.firebaseio.com",
+    projectId: "tarot-797ea",
+    storageBucket: "tarot-797ea.appspot.com",
+    messagingSenderId: "285924635150",
+    appId: "1:285924635150:web:03f4893cfbb7fe6c9a425f",
+    measurementId: "G-D43C0YGFS3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 		<h1> <p id=name></p>¿Que dicen las cartas sobre ti?</h1>
 		<h2>¡Averigualo!</h2>
 				<a class="link" href=".\animation\diary.html" id="diario">Diario</a>
