@@ -1,19 +1,16 @@
-const app = firebase.app();
 
-console.log(app);
 
 document.addEventListener("DOMContentLoaded", event =>{
-	function goolgeLogin(){
-	const provider  = new firebase.auth.GoogleAuthProvider();
-	firebase.auth().signInWithPopup(provider).then(
-		result => {
-			const user = result.user;
-			document.getElementById("name").innerText = user.displayName;
-				}
-			);
+	const app = firebase.app();
+	const db = firebase.firestore();
+	const myPost = db.collection("notifications").doc("notif");
+	myPost.get().then(
+		doc=>{
+			const data = doc.data();
+			console.log(data);
+			alert(data["n1"]);
 		}
-	goolgeLogin();
-
+		);
 });
 
 
