@@ -22,6 +22,7 @@ article{
 
 #text::-webkit-scrollbar {
   width: 10px;
+  font-family: sans-serif;
 }
 
 /* Track */
